@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onlybooks-Download</title>
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLV1Jth7w0RYERXRuyFHeCFclAeGnjsetwxQ&s" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding:0 ;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    text-decoration: none;
+    outline: none;
+}
+html , body {
+    height: 100%;
+    width: 100%;
+   
+}
+.books{
+    background-image: url(data:image/jpeg;base64,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);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 250vh;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3rem;
+    margin-bottom:2rem ;
+ 
+}
+.books img{
+width:80% ;
+height: 60vh;
+padding: 40px;
+padding-top: 50px;
+transition: 0.5s;
+}
+.books img:hover{
+    transform: translateY(-2%);
+}
+.books a{
+    padding-left: 40px;
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <div class="books">
+        <div class="1">
+         <div class="img"><img src="/static/images/book1.jpg" alt=""></div>
+         <div class="text"><a href="https://books.google.co.in/books?id=llpAAQAAIAAJ&printsec=frontcover&dq=Beatrix+Potter&hl=en&newbks=1&newbks_redir=1&sa=X&ved=2ahUKEwixkdHTue-JAxWZUGwGHf2hFJAQ6AF6BAgNEAI">The Tale of Peter Rabbit</a></div>
+    
+    </div>
+    
+        <div class="1">
+         <div class="img"><img src="/static/images/book2.jpg" alt=""></div>
+         <div class="text"><a href="https://books.google.co.in/books?id=llpAAQAAIAAJ&printsec=frontcover&dq=Beatrix+Potter&hl=en&newbks=1&newbks_redir=1&sa=X&ved=2ahUKEwixkdHTue-JAxWZUGwGHf2hFJAQ6AF6BAgNEAI">The Tale of Peter Rabbit</a></div>
+    
+    </div>
+
+    
+        <div class="1">
+         <div class="img"><img src="/static/images/book3.jpg" alt=""></div>
+         <div class="text"><a href="https://books.google.co.in/books?id=llpAAQAAIAAJ&printsec=frontcover&dq=Beatrix+Potter&hl=en&newbks=1&newbks_redir=1&sa=X&ved=2ahUKEwixkdHTue-JAxWZUGwGHf2hFJAQ6AF6BAgNEAI">The Tale of Peter Rabbit</a></div>
+    
+    </div>
+    
+        <div class="1">
+         <div class="img"><img src="/static/images/book4.jpg" alt=""></div>
+         <div class="text"><a href="https://books.google.co.in/books?id=llpAAQAAIAAJ&printsec=frontcover&dq=Beatrix+Potter&hl=en&newbks=1&newbks_redir=1&sa=X&ved=2ahUKEwixkdHTue-JAxWZUGwGHf2hFJAQ6AF6BAgNEAI">The Tale of Peter Rabbit</a></div>
+    
+    </div>
+    
+        <div class="1">
+         <div class="img"><img src="/static/images/book5.jpg" alt=""></div>
+         <div class="text"><a href="https://books.google.co.in/books?id=llpAAQAAIAAJ&printsec=frontcover&dq=Beatrix+Potter&hl=en&newbks=1&newbks_redir=1&sa=X&ved=2ahUKEwixkdHTue-JAxWZUGwGHf2hFJAQ6AF6BAgNEAI">The Tale of Peter Rabbit</a></div>
+    
+    </div>
+    
+        <div class="1">
+         <div class="img"><img src="/static/images/book6.jpg" alt=""></div>
+         <div class="text"><a href="https://books.google.co.in/books?id=llpAAQAAIAAJ&printsec=frontcover&dq=Beatrix+Potter&hl=en&newbks=1&newbks_redir=1&sa=X&ved=2ahUKEwixkdHTue-JAxWZUGwGHf2hFJAQ6AF6BAgNEAI">The Tale of Peter Rabbit</a></div>
+    
+    </div>
+    
+        <div class="1">
+         <div class="img"><img src="/static/images/book7.jpg" alt=""></div>
+         <div class="text"><a href="https://books.google.co.in/books?id=llpAAQAAIAAJ&printsec=frontcover&dq=Beatrix+Potter&hl=en&newbks=1&newbks_redir=1&sa=X&ved=2ahUKEwixkdHTue-JAxWZUGwGHf2hFJAQ6AF6BAgNEAI">The Tale of Peter Rabbit</a></div>
+    
+    </div>
+    
+        <div class="1">
+         <div class="img"><img src="/static/images/book8.jpg" alt=""></div>
+         <div class="text"><a href="https://books.google.co.in/books?id=llpAAQAAIAAJ&printsec=frontcover&dq=Beatrix+Potter&hl=en&newbks=1&newbks_redir=1&sa=X&ved=2ahUKEwixkdHTue-JAxWZUGwGHf2hFJAQ6AF6BAgNEAI">The Tale of Peter Rabbit</a></div>
+    
+    </div>
+    <div class="1">
+        <div class="img"><img src="/static/images/book9.jpg" alt=""></div>
+        <div class="text"><a href="https://books.google.co.in/books?id=llpAAQAAIAAJ&printsec=frontcover&dq=Beatrix+Potter&hl=en&newbks=1&newbks_redir=1&sa=X&ved=2ahUKEwixkdHTue-JAxWZUGwGHf2hFJAQ6AF6BAgNEAI">The Tale of Peter Rabbit</a></div>
+   
+   </div>
+   
+        
+
+        <div class="1">
+         <div class="img"><img src="/static/images/book10.jpg" alt=""></div>
+         <div class="text"><a href="https://books.google.co.in/books?id=llpAAQAAIAAJ&printsec=frontcover&dq=Beatrix+Potter&hl=en&newbks=1&newbks_redir=1&sa=X&ved=2ahUKEwixkdHTue-JAxWZUGwGHf2hFJAQ6AF6BAgNEAI">The Tale of Peter Rabbit</a></div>
+    
+    </div>
+    </div>
+</body>
+</html>
